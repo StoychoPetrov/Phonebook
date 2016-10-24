@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="com.example.stoycho.phonebook.fragments.RegistrationFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/first_name"
+        android:hint="@string/first_name"
+        android:textColorHint="@android:color/darker_gray"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/edittext_drawable"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/last_name"
+        android:hint="@string/last_name"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:lines="1"
+        android:background="@drawable/edittext_drawable"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/country"
+            android:hint="@string/country"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:lines="1"
+            android:background="@drawable/edittext_drawable"
+            android:focusable="false"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/email"
+        android:hint="@string/email"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:lines="1"
+        android:background="@drawable/edittext_drawable" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/callingCode"
+            android:layout_centerVertical="true"
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/phone_number"
+            android:hint="@string/phone_number"
+            android:layout_toRightOf="@id/callingCode"
+            android:textColorHint="@android:color/darker_gray"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:lines="1"
+            android:background="@drawable/edittext_drawable"
+            android:inputType="phone"/>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:text="@string/male"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:text="@string/female"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add"
+        android:layout_marginTop="10dp"
+        android:text="@string/add"
+        android:drawableLeft="@android:drawable/ic_input_add"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

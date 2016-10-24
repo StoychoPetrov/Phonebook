@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.stoycho.phonebook.fragments.CountriesFragment"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:id="@+id/search"
+      android:hint="@string/search"
+      android:textColorHint="@android:color/darker_gray"
+      android:inputType="text"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"/>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:id="@+id/all"
+      android:layout_below="@+id/search"
+      android:text="@string/all"
+      android:textSize="20sp"
+      android:gravity="center_vertical"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp" />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:id="@+id/divider"
+      android:layout_below="@+id/all"
+      android:background="@android:color/darker_gray"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/countriesList"
+        android:layout_below="@+id/divider"/>
+
+</RelativeLayout>
